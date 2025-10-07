@@ -1,7 +1,6 @@
 # Design Patterns in Python
 [![Python](https://img.shields.io/badge/Python-3.11-3776ab.svg?logo=python&logoColor=white)](https://python.org)
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)]()
-[![Contributors](https://img.shields.io/badge/Contributors-Welcome-orange.svg)](CONTRIBUTING.md)
 [![Made with](https://img.shields.io/badge/Made%20with-❤️-red.svg)]()
 
 > Implementation of essential object-oriented design patterns in python, with tests, examples, and clear documentation.
