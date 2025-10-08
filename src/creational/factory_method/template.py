@@ -14,7 +14,7 @@ class Creator(ABC):
         """Note that the Creator may also provide some default implementation of the factory method."""
         pass
 
-    def some_operations(self) -> str:
+    def business_logic(self) -> str:
         """
         Also note that, despite its name, the Creator's primary responsibility
         is not creating products. Usually, it contains some core business logic
@@ -88,7 +88,7 @@ def client_code(creator: Creator) -> None:
     """
 
     print(f"Client: I'm not aware of the creator's class, but it still works.\n"
-          f"{creator.some_operations()}", end="")
+          f"{creator.business_logic()}", end="")
 
 
 if __name__ == "__main__":
