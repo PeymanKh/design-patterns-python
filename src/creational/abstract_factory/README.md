@@ -11,10 +11,14 @@ factories" because it creates other factories.
 5. **Client:** Uses factories and products through abstract interfaces only—never knows about concrete classes
 
 # Applications
-1. Your code needs to create sets of related objects that work together, but at the time of writing the code, you either:
+- Your code needs to create sets of related objects that work together, but at the time of writing the code, you either:
     - Don't know exactly which families will be needed 
     - Want to easily add new families in the future without changing existing code
-2. The factory gives you methods to create all products in a family (create_compute(), create_storage(), create_database()). When you use these methods, you're guaranteed all products come from the same family.
+- The factory gives you methods to create all products in a family (create_compute(), create_storage(), create_database()). When you use these methods, you're guaranteed all products come from the same family.
 
 
 
+## Don't use it when:
+- You only have one family of products (use Factory Method instead)
+- Objects don't need to work together as a set
+- The complexity isn't justified (simple projects)

@@ -14,3 +14,7 @@ to change how the objects are used, only we add a new creator subclass.
 ## Applications:
 1. Use when your code needs to create objects, but at the time of writing you do not know exactly which specific types of objects will be needed when the program runs in the future.
 2. You're building a library/framework that other developers will use, and you want to let them customize how certain objects are created without rewriting your code.
+
+## Don't use it when:
+- Object creation is simple
+- If there's only one concrete class and no plans for variants, factories add complexity without benefit
